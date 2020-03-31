@@ -7,7 +7,8 @@
 ###############################
 
 ## Tag for random player
-tag @p[team=Player,sort=random] add Tagged
+team join Tagged @p[team=Player,sort=random]
+scoreboard players set @a[team=Tagged] TAG_TIMES 1
 
 ## Set scoreboards
 scoreboard players set Time TICK 0
@@ -29,14 +30,15 @@ tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"      Minecraft Tag alpha-0.1","color":"red","bold":true}]
 tellraw @a ["",{"text":"                  ","color":"white"},{"text":"Game Start","color":"green","bold":true}]
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
-tellraw @a ["",{"text":"   鬼は ","color":"white"},{"selector":"@a[tag=Tagged]","bold":true,"color":"red"},{"text":" です。","color":"white"}]
+tellraw @a ["",{"text":"   鬼は ","color":"white"},{"selector":"@a[team=Tagged]","bold":true,"color":"red"},{"text":" です。","color":"white"}]
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
 
 ## Set effects
-effect give @a[tag=Tagged] minecraft:slowness 5 100 true
-effect give @s[tag=Tagged] minecraft:blindness 5 100 true
-effect give @s[tag=Tagged] minecraft:speed 1000000 1 true
+effect give @a[team=Tagged] minecraft:speed 1000000 1 true
 
 ## Give items
-give @a[team=Player] minecraft:bow{display:{Name:"\"弓\""},Unbreakable:1,Enchantments:[{id:"minecraft:punch",lvl:2},{id:"minecraft:vanishing_curse",lvl:1},{id:"minecraft:infinity",lvl:1}],HideFlags:39} 1
-give @a[team=Player] minecraft:arrow{display:{Name:"\"矢\""},Enchantments:[{id:"minecraft:vanishing_curse",lvl:1}],HideFlags:39} 1
+function mtag:system/item/item_branch
+execute as @a[team=Player] run function mtag:system/item/common/bow
+execute as @a[team=Tagged] run function mtag:system/item/common/bow
+execute as @a[team=Player] run function mtag:system/item/common/arrow
+execute as @a[team=Tagged] run function mtag:system/item/common/arrow

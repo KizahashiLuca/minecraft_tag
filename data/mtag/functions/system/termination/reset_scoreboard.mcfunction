@@ -14,18 +14,21 @@ scoreboard objectives remove TimeLimit
 ## Remove variables for the time system
 scoreboard objectives remove SECOND
 scoreboard objectives remove TICK
+scoreboard objectives remove TEMP_SECOND
+scoreboard objectives remove 100
 scoreboard objectives remove 20
+## Remove variables for the tagged system
+scoreboard objectives remove TAG_TIMES
 ## Remove players
 scoreboard players reset Time
+scoreboard players reset @a
 
 ## Remove bossbar
 bossbar remove bossbar
 
-## Remove effects
-effect clear @a[team=Player]
-
 ## Remove team
 team remove Player
+team remove Tagged
 
 ## Kill entities
 effect clear @a
@@ -34,6 +37,8 @@ clear @a
 ## Remove tags
 tag @a remove Host
 tag @a remove Tagged
+tag @a remove PassItem
+tag @a remove NoItem
 
 ## Change gamerules
 gamemode adventure @a

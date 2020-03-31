@@ -1,9 +1,9 @@
 ###############################
-## Minecraft Version 1.14
-## Minecraft Werewolf Light
+## Minecraft Version 1.15.2
+## Minecraft Tag
 ## Author : KizahashiLuca
-## Date   : 17 September 2019
-## Version: beta-1.5
+## Date   : 22 Feb 2020
+## Version: alpha-0.1
 ###############################
 
 ## Calculate time

@@ -31,4 +31,4 @@ execute store result bossbar bossbar max run scoreboard players get Time Waiting
 execute store result bossbar bossbar value run scoreboard players get Time SECOND
 
 ## Set advancement
-advancement revoke @a[team=Player] only mtag:attacked_from_tagged
+advancement revoke @a only mtag:attacked_from_tagged
