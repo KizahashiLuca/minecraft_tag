@@ -26,4 +26,4 @@ execute as @a if score Time TICK matches 0 if score Time SECOND matches 2..4 run
 execute as @a if score Time TICK matches 0 if score Time SECOND matches 1 run playsound minecraft:item.trident.thunder master @s ~ ~ ~ 1 1 1
 
 ## Terminate the game
-execute if score Time TICK matches 0 if score Time SECOND matches 1 run function mtag:system/termination/title
+execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mtag:system/termination/title
