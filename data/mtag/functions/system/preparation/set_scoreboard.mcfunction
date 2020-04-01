@@ -2,8 +2,8 @@
 ## Minecraft Version 1.15.2
 ## Minecraft Tag
 ## Author : KizahashiLuca
-## Date   : 22 Feb 2020
-## Version: alpha-0.1
+## Date   : 01 Apr 2020
+## Version: alpha-0.2
 ###############################
 
 ## Tag host player
@@ -22,6 +22,7 @@ scoreboard objectives add 100 dummy
 scoreboard objectives add 20 dummy
 ## Add variables for the tagged system
 scoreboard objectives add TAG_TIMES dummy "鬼"
+scoreboard objectives add TAG_TIMES_SWAP dummy
 scoreboard objectives setdisplay sidebar.team.red TAG_TIMES
 
 ## Set variables
@@ -33,7 +34,8 @@ scoreboard players set Time SECOND 60
 scoreboard players set Time TICK 0
 scoreboard players set Time 100 100
 scoreboard players set Time 20 20
-scoreboard players set @a TAG_TIMES 0
+scoreboard players set @a SECOND 0
+scoreboard players set @a TICK 0
 
 ## Set team
 team add Player
@@ -51,6 +53,7 @@ team modify Tagged friendlyFire true
 gamemode adventure @a[team=Player]
 gamemode adventure @a[team=Tagged]
 difficulty peaceful
+clear @a
 
 ## Set effects
 effect give @a[team=Player] minecraft:resistance 1000000 4 true

@@ -2,8 +2,8 @@
 ## Minecraft Version 1.15.2
 ## Minecraft Tag
 ## Author : KizahashiLuca
-## Date   : 22 Feb 2020
-## Version: alpha-0.1
+## Date   : 01 Apr 2020
+## Version: alpha-0.2
 ###############################
 
 ## Tag for random player
@@ -27,7 +27,7 @@ title @a subtitle ["",{"text":"START","color":"white","bold":true}]
 
 ## Send messages & tagged player
 tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
-tellraw @a ["",{"text":"      Minecraft Tag alpha-0.1","color":"red","bold":true}]
+tellraw @a ["",{"text":"      Minecraft Tag alpha-0.2","color":"red","bold":true}]
 tellraw @a ["",{"text":"                  ","color":"white"},{"text":"Game Start","color":"green","bold":true}]
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"   鬼は ","color":"white"},{"selector":"@a[team=Tagged]","bold":true,"color":"red"},{"text":" です。","color":"white"}]

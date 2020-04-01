@@ -2,8 +2,8 @@
 ## Minecraft Version 1.15.2
 ## Minecraft Tag
 ## Author : KizahashiLuca
-## Date   : 22 Feb 2020
-## Version: alpha-0.1
+## Date   : 01 Apr 2020
+## Version: alpha-0.2
 ###############################
 
 ## Remove variables for the game system
@@ -31,6 +31,8 @@ team remove Player
 team remove Tagged
 
 ## Kill entities
+kill @e[type=arrow]
+kill @e[type=item]
 effect clear @a
 clear @a
 
