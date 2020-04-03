@@ -21,9 +21,9 @@ scoreboard objectives add TEMP_SECOND dummy
 scoreboard objectives add 100 dummy
 scoreboard objectives add 20 dummy
 ## Add variables for the tagged system
-scoreboard objectives add TAG_TIMES dummy "鬼"
+scoreboard objectives add TAG_TIMES dummy {"text":"鬼","color":"red","bold":true}
 scoreboard objectives add TAG_TIMES_SWAP dummy
-scoreboard objectives setdisplay sidebar.team.red TAG_TIMES
+scoreboard objectives setdisplay sidebar TAG_TIMES
 
 ## Set variables
 scoreboard players set Time GAME 10
@@ -44,7 +44,6 @@ team modify Player nametagVisibility never
 team modify Player seeFriendlyInvisibles false
 team modify Player friendlyFire true
 team add Tagged
-team modify Tagged color red
 team modify Tagged nametagVisibility never
 team modify Tagged seeFriendlyInvisibles false
 team modify Tagged friendlyFire true

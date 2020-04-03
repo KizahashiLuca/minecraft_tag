@@ -13,6 +13,7 @@ scoreboard objectives add TENS_DIGIT dummy
 scoreboard objectives add TEMP_DIGIT dummy
 scoreboard objectives add AddedStick dummy
 scoreboard objectives add AddedPearl dummy
+scoreboard objectives add AddedConduit dummy
 scoreboard objectives add AddedCrossbow dummy
 scoreboard objectives add AddedSnowball dummy
 scoreboard objectives add AddedInvis dummy
@@ -21,6 +22,7 @@ scoreboard objectives add AddedJump dummy
 ## Set variables for the item system
 scoreboard players set Time AddedStick 1
 scoreboard players set Time AddedPearl 1
+scoreboard players set Time AddedConduit 0
 scoreboard players set Time AddedCrossbow 0
 scoreboard players set Time AddedSnowball 0
 scoreboard players set Time AddedInvis 1
@@ -34,16 +36,13 @@ tag @a[team=Tagged] add NoItem
 ## Set DENOMINATOR (Kind of Items)
 scoreboard players set Time DENOMINATOR 0
 execute if score Time AddedStick matches 1 run scoreboard players add Time DENOMINATOR 1
-execute if score Time AddedTotem matches 1 run scoreboard players add Time DENOMINATOR 1
-execute if score Time AddedDeath2 matches 1 run scoreboard players add Time DENOMINATOR 1
 execute if score Time AddedPearl matches 1 run scoreboard players add Time DENOMINATOR 1
-execute if score Time AddedHoe matches 1 run scoreboard players add Time DENOMINATOR 1
+execute if score Time AddedConduit matches 1 run scoreboard players add Time DENOMINATOR 1
 execute if score Time AddedCrossbow matches 1 run scoreboard players add Time DENOMINATOR 1
 execute if score Time AddedSnowball matches 1 run scoreboard players add Time DENOMINATOR 1
 execute if score Time AddedInvis matches 1 run scoreboard players add Time DENOMINATOR 1
 execute if score Time AddedSpeed matches 1 run scoreboard players add Time DENOMINATOR 1
 execute if score Time AddedJump matches 1 run scoreboard players add Time DENOMINATOR 1
-execute if score Time AddedElytra matches 1 run scoreboard players add Time DENOMINATOR 1
 ## Calculate ones digit
 scoreboard players operation Time ONES_DIGIT = Time NUM
 scoreboard players remove Time ONES_DIGIT 1
@@ -64,6 +63,7 @@ scoreboard objectives remove TENS_DIGIT
 scoreboard objectives remove TEMP_DIGIT
 scoreboard objectives remove AddedStick
 scoreboard objectives remove AddedPearl
+scoreboard objectives remove AddedConduit
 scoreboard objectives remove AddedCrossbow
 scoreboard objectives remove AddedSnowball
 scoreboard objectives remove AddedInvis

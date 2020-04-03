@@ -19,6 +19,9 @@ execute if score Time AddedPearl matches 1 run scoreboard players add Time TEMP_
 execute if score Time AddedCrossbow matches 1 if score Time ONES_DIGIT >= Time TEMP_DIGIT as @r[tag=!PassItem,tag=NoItem] run function mtag:system/item/special/crossbow
 execute if score Time AddedCrossbow matches 1 run scoreboard players add Time TEMP_DIGIT 1
 
+execute if score Time AddedConduit matches 1 if score Time ONES_DIGIT >= Time TEMP_DIGIT as @r[tag=!PassItem,tag=NoItem] run function mtag:system/item/special/conduit
+execute if score Time AddedConduit matches 1 run scoreboard players add Time TEMP_DIGIT 1
+
 execute if score Time AddedSnowball matches 1 if score Time ONES_DIGIT >= Time TEMP_DIGIT as @r[tag=!PassItem,tag=NoItem] run function mtag:system/item/special/snowball
 execute if score Time AddedSnowball matches 1 run scoreboard players add Time TEMP_DIGIT 1
 
