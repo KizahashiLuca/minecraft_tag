@@ -19,9 +19,15 @@ effect give @a[team=Tagged] minecraft:resistance 1000000 4 true
 scoreboard players operation @a[team=Tagged] TAG_TIMES_SWAP = @a[team=Tagged] TAG_TIMES
 scoreboard players reset @a[team=Tagged] TAG_TIMES
 
+## Remove Tag
+tag @a[team=Tagged] remove Tagged
+
 ## Process the tagging system
 team join Player @a[team=Tagged]
 team join Tagged @s
+
+## Add Tag
+tag @s add Tagged
 
 ## Set effects
 effect give @s minecraft:slowness 5 100 true

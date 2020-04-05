@@ -10,6 +10,9 @@
 team join Tagged @p[team=Player,sort=random]
 scoreboard players set @a[team=Tagged] TAG_TIMES 1
 
+## Add Tag
+tag @a[team=Tagged] add Tagged
+
 ## Set scoreboards
 scoreboard players set Time TICK 0
 scoreboard players operation Time SECOND = Time TimeLimit
