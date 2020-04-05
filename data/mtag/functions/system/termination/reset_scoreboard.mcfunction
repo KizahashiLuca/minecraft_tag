@@ -28,7 +28,6 @@ bossbar remove bossbar
 
 ## Remove team
 team remove Player
-team remove Tagged
 
 ## Kill entities
 kill @e[type=arrow]

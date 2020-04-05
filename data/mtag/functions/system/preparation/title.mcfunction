@@ -7,11 +7,8 @@
 ###############################
 
 ## Tag for random player
-team join Tagged @p[team=Player,sort=random]
-scoreboard players set @a[team=Tagged] TAG_TIMES 1
-
-## Add Tag
-tag @a[team=Tagged] add Tagged
+tag @p[team=Player,sort=random] add Tagged
+scoreboard players set @a[tag=Tagged] TAG_TIMES 1
 
 ## Set scoreboards
 scoreboard players set Time TICK 0
@@ -33,15 +30,13 @@ tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"      Minecraft Tag alpha-0.2","color":"red","bold":true}]
 tellraw @a ["",{"text":"                  ","color":"white"},{"text":"Game Start","color":"green","bold":true}]
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
-tellraw @a ["",{"text":"   鬼は ","color":"white"},{"selector":"@a[team=Tagged]","bold":true,"color":"red"},{"text":" です。","color":"white"}]
+tellraw @a ["",{"text":"   鬼は ","color":"white"},{"selector":"@a[tag=Tagged]","bold":true,"color":"red"},{"text":" です。","color":"white"}]
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
 
 ## Set effects
-effect give @a[team=Tagged] minecraft:speed 1000000 1 true
+effect give @a[tag=Tagged] minecraft:speed 1000000 1 true
 
 ## Give items
 function mtag:system/item/item_branch
 execute as @a[team=Player] run function mtag:system/item/common/bow
-execute as @a[team=Tagged] run function mtag:system/item/common/bow
 execute as @a[team=Player] run function mtag:system/item/common/arrow
-execute as @a[team=Tagged] run function mtag:system/item/common/arrow

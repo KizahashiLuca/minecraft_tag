@@ -9,11 +9,14 @@
 ## Process the timer system
 function mtag:system/time
 
+## Title action bar
+title @a[tag=Tagged] actionbar ["",{"text":"あなたは"},{"text":"鬼","color":"red","bold":true},{"text":"です"}]
+
 ## Detect mines (conduits)
 execute as @e[type=item,nbt={OnGround:1b,Item:{id:"minecraft:conduit",tag:{display:{Name:"\"地雷\"",Tag:"\"Mine\""}}}}] at @s if entity @p[distance=..2] run function mtag:system/ongame/mine_system
 
 ## Process the tagging system
-execute as @a[team=Player,advancements={mtag:attacked_from_tagged=true}] run function mtag:system/ongame/tag_system
+execute as @a[team=Player,tag=!Tagged,advancements={mtag:attacked_from_tagged=true}] run function mtag:system/ongame/tag_system
 
 ## Reset an advancement
 advancement revoke @a only mtag:attacked_from_tagged

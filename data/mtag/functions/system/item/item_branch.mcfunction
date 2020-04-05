@@ -31,7 +31,6 @@ scoreboard players set Time AddedJump 1
 
 ## Set a tag
 tag @a[team=Player] add NoItem
-tag @a[team=Tagged] add NoItem
 
 ## Set DENOMINATOR (Kind of Items)
 scoreboard players set Time DENOMINATOR 0

@@ -8,12 +8,13 @@
 
 ## Title of waiting time
 title @a times 10 1160 30
-title @a title ["",{"text":"潜伏時間開始","color":"red","bold":true}]
-title @a subtitle ["",{"text":"Waiting Start","color":"white","bold":true}]
+title @a title ["",{"text":"潜伏時間","color":"red","bold":true}]
+title @a subtitle ["",{"text":"Waiting Time","color":"white","bold":true}]
 
 ## Send messages
 tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"      Minecraft Tag alpha-0.2","color":"red","bold":true}]
+tellraw @a ["",{"text":"                   ","color":"white"},{"text":"潜伏時間開始","color":"green","bold":true}]
 tellraw @a ["",{"text":"                 ","color":"white"},{"text":"Waiting Start","color":"green","bold":true}]
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
 

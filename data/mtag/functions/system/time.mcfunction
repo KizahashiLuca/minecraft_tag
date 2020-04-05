@@ -11,9 +11,9 @@ scoreboard players remove Time TICK 1
 execute if score Time TICK matches -1 run scoreboard players remove Time SECOND 1
 
 ## Set tagged time
-scoreboard players add @a[team=Tagged] TICK 1
-scoreboard players operation @a[team=Tagged] TICK %= Time 20
-execute as @a[team=Tagged] if score @s TICK matches 0 run scoreboard players add @s SECOND 1
+scoreboard players add @a[tag=Tagged] TICK 1
+scoreboard players operation @a[tag=Tagged] TICK %= Time 20
+execute as @a[tag=Tagged] if score @s TICK matches 0 run scoreboard players add @s SECOND 1
 
 ## Store time for bossbar
 execute store result bossbar bossbar value run scoreboard players get Time SECOND

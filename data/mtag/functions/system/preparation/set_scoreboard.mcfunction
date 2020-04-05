@@ -21,9 +21,7 @@ scoreboard objectives add TEMP_SECOND dummy
 scoreboard objectives add 100 dummy
 scoreboard objectives add 20 dummy
 ## Add variables for the tagged system
-scoreboard objectives add TAG_TIMES dummy {"text":"鬼","color":"red","bold":true}
-scoreboard objectives add TAG_TIMES_SWAP dummy
-scoreboard objectives setdisplay sidebar.team.white TAG_TIMES
+scoreboard objectives add TAG_TIMES dummy
 
 ## Set variables
 scoreboard players set Time GAME 10
@@ -43,25 +41,17 @@ team join Player @a[gamemode=!spectator]
 team modify Player nametagVisibility never
 team modify Player seeFriendlyInvisibles false
 team modify Player friendlyFire true
-team add Tagged
-team modify Tagged color white
-team modify Tagged nametagVisibility never
-team modify Tagged seeFriendlyInvisibles false
-team modify Tagged friendlyFire true
 
 ## Set gamemode
 gamemode adventure @a[team=Player]
-gamemode adventure @a[team=Tagged]
 difficulty peaceful
 clear @a
 
 ## Set effects
 effect give @a[team=Player] minecraft:resistance 1000000 4 true
-effect give @a[team=Tagged] minecraft:resistance 1000000 4 true
 
 ## Reset an advancement
 advancement revoke @a only mtag:attacked_from_tagged
 
 ## Count number of players
 execute as @a[team=Player] run scoreboard players add Time NUM 1
-execute as @a[team=Tagged] run scoreboard players add Time NUM 1
