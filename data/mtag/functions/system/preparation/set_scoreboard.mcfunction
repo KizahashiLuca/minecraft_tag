@@ -22,6 +22,8 @@ scoreboard objectives add 100 dummy
 scoreboard objectives add 20 dummy
 ## Add variables for the tagged system
 scoreboard objectives add TAG_TIMES dummy
+## Add variables for the tagged number
+scoreboard objectives add TAG_NUMBER dummy
 
 ## Set variables
 scoreboard players set Time GAME 10
@@ -34,6 +36,7 @@ scoreboard players set Time 100 100
 scoreboard players set Time 20 20
 scoreboard players set @a SECOND 0
 scoreboard players set @a TICK 0
+scoreboard players set @a TAG_TIMES 0
 
 ## Set team
 team add Player

@@ -7,7 +7,7 @@
 ###############################
 
 ## Tag for random player
-tag @p[team=Player,sort=random] add Tagged
+tag @p[team=Player,tag=!Tagged,sort=random] add Tagged
 scoreboard players set @a[tag=Tagged] TAG_TIMES 1
 
 ## Set scoreboards

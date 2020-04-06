@@ -15,10 +15,6 @@ title @a subtitle ["",{"text":"END","color":"white","bold":true}]
 scoreboard players set Time 20 5
 scoreboard players operation @a TICK *= Time 20
 
-## Set tagged times
-execute as @a[tag=Tagged] run scoreboard players operation @s TAG_TIMES_SWAP = @s TAG_TIMES
-execute as @a[team=Player] run scoreboard players operation @s TAG_TIMES = @s TAG_TIMES_SWAP
-
 ## Send messages
 tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"      Minecraft Tag alpha-0.2","color":"red","bold":true}]

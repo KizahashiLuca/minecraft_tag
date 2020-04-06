@@ -19,6 +19,8 @@ scoreboard objectives remove 100
 scoreboard objectives remove 20
 ## Remove variables for the tagged system
 scoreboard objectives remove TAG_TIMES
+## Remove variables for the tagged number
+scoreboard objectives remove TAG_NUMBER
 ## Remove players
 scoreboard players reset Time
 scoreboard players reset @a
