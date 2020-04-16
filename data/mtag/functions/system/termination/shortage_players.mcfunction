@@ -16,4 +16,5 @@ tellraw @a ["",{"text":"  必要な人数は","color":"white"},{"text":" 3 ","bo
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
 
 ## Reset the scoreboard
+title @a clear
 function mtag:system/termination/reset_scoreboard

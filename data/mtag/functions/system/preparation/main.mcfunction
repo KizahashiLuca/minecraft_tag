@@ -10,7 +10,7 @@
 function mtag:system/preparation/set_scoreboard
 
 ## Stop the game wheather shortage of players
-execute if score Time NUM matches ..2 run function mtag:system/termination/shortage_players
+execute if score Time NUM matches ..0 run function mtag:system/termination/shortage_players
 
 ## Prepare the waiting time
-execute if score Time NUM matches 3.. run function mtag:system/preparation/waiting_start
+execute if score Time NUM matches 1.. run function mtag:system/preparation/waiting_start

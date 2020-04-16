@@ -15,5 +15,5 @@ tellraw @a ["",{"text":"  ゲームが中断されました。","color":"white"}
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
 
 ## Reset scoreboards
-title @a reset
+title @a clear
 function mtag:system/termination/reset_scoreboard

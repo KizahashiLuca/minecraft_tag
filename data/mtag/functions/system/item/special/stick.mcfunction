@@ -6,6 +6,6 @@
 ## Version: alpha-0.2
 ###############################
 
-give @s minecraft:stick{display:{Name:"\"木の棒\"",Lore:["\"ホームランバット\""]},Unbreakable:1,Enchantments:[{id:"minecraft:knockback",lvl:9}]} 1
+give @s minecraft:stick{display:{Name:"\"\\u00a7rホームランバット\""},Unbreakable:1,Enchantments:[{id:"minecraft:knockback",lvl:10}]} 1
 
 tag @s add PassItem

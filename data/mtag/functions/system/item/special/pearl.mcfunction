@@ -6,6 +6,6 @@
 ## Version: alpha-0.2
 ###############################
 
-give @s minecraft:ender_pearl{display:{Name:"\"エンダーパール\"",Lore:["\"投げたところに瞬間移動できる\""]}} 2
+give @s minecraft:ender_pearl 2
 
 tag @s add PassItem

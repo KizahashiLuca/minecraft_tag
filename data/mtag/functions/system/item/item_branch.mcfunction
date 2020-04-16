@@ -16,15 +16,19 @@ scoreboard objectives add AddedPearl dummy
 scoreboard objectives add AddedConduit dummy
 scoreboard objectives add AddedCrossbow dummy
 scoreboard objectives add AddedSnowball dummy
+scoreboard objectives add AddedGoldSword dummy
+scoreboard objectives add AddedEnderEye dummy
 scoreboard objectives add AddedInvis dummy
 scoreboard objectives add AddedSpeed dummy
 scoreboard objectives add AddedJump dummy
 ## Set variables for the item system
 scoreboard players set Time AddedStick 1
 scoreboard players set Time AddedPearl 1
-scoreboard players set Time AddedConduit 0
-scoreboard players set Time AddedCrossbow 0
-scoreboard players set Time AddedSnowball 0
+scoreboard players set Time AddedConduit 1
+scoreboard players set Time AddedCrossbow 1
+scoreboard players set Time AddedSnowball 1
+scoreboard players set Time AddedGoldSword 1
+scoreboard players set Time AddedEnderEye 0
 scoreboard players set Time AddedInvis 1
 scoreboard players set Time AddedSpeed 1
 scoreboard players set Time AddedJump 1
@@ -39,6 +43,8 @@ execute if score Time AddedPearl matches 1 run scoreboard players add Time DENOM
 execute if score Time AddedConduit matches 1 run scoreboard players add Time DENOMINATOR 1
 execute if score Time AddedCrossbow matches 1 run scoreboard players add Time DENOMINATOR 1
 execute if score Time AddedSnowball matches 1 run scoreboard players add Time DENOMINATOR 1
+execute if score Time AddedGoldSword matches 1 run scoreboard players add Time DENOMINATOR 1
+execute if score Time AddedEnderEye matches 1 run scoreboard players add Time DENOMINATOR 1
 execute if score Time AddedInvis matches 1 run scoreboard players add Time DENOMINATOR 1
 execute if score Time AddedSpeed matches 1 run scoreboard players add Time DENOMINATOR 1
 execute if score Time AddedJump matches 1 run scoreboard players add Time DENOMINATOR 1
@@ -65,6 +71,8 @@ scoreboard objectives remove AddedPearl
 scoreboard objectives remove AddedConduit
 scoreboard objectives remove AddedCrossbow
 scoreboard objectives remove AddedSnowball
+scoreboard objectives remove AddedGoldSword
+scoreboard objectives remove AddedEnderEye
 scoreboard objectives remove AddedInvis
 scoreboard objectives remove AddedSpeed
 scoreboard objectives remove AddedJump

@@ -6,6 +6,6 @@
 ## Version: alpha-0.2
 ###############################
 
-give @s minecraft:potion{display:{Name:"\"跳躍のポーション\"",Lore:["\"30秒の間、高く跳べるポーション\""]},CustomPotionEffects:[{Id:8,Amplifier:9,Duration:600}],CustomPotionColor:3470848} 1
+give @s minecraft:potion{display:{Name:"\"\\u00a7r跳躍のポーション\""},CustomPotionEffects:[{Id:8,Amplifier:10,Duration:600}],CustomPotionColor:3470848} 1
 
 tag @s add PassItem

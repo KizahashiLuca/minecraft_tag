@@ -21,6 +21,9 @@ scoreboard objectives remove 20
 scoreboard objectives remove TAG_TIMES
 ## Remove variables for the tagged number
 scoreboard objectives remove TAG_NUMBER
+## Remove variables for the snowball system
+scoreboard objectives remove SNOWBALL
+scoreboard objectives remove TEMP_SNOWBALL
 ## Remove players
 scoreboard players reset Time
 scoreboard players reset @a
@@ -28,12 +31,18 @@ scoreboard players reset @a
 ## Remove bossbar
 bossbar remove bossbar
 
+## Reset title
+title @a[tag=Tagged] actionbar [""]
+
 ## Remove team
 team remove Player
 
 ## Kill entities
-kill @e[type=arrow]
-kill @e[type=item]
+kill @e[type=minecraft:area_effect_cloud]
+kill @e[type=minecraft:snowball]
+kill @e[type=minecraft:spectral_arrow]
+kill @e[type=minecraft:arrow]
+kill @e[type=minecraft:item]
 effect clear @a
 clear @a
 
@@ -42,6 +51,9 @@ tag @a remove Host
 tag @a remove Tagged
 tag @a remove PassItem
 tag @a remove NoItem
+tag @a remove NoHit
+tag @a remove DetectHit
+tag @a remove Snowball
 
 ## Change gamerules
 gamemode adventure @a

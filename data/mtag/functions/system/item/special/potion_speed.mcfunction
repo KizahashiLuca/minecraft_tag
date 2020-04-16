@@ -6,6 +6,6 @@
 ## Version: alpha-0.2
 ###############################
 
-give @s minecraft:potion{display:{Name:"\"俊敏のポーション\"",Lore:["\"30秒の間、足が速くなるポーション\""]},CustomPotionEffects:[{Id:1,Amplifier:9,Duration:600}],CustomPotionColor:63217} 1
+give @s minecraft:potion{display:{Name:"\"\\u00a7r俊敏のポーション\""},CustomPotionEffects:[{Id:1,Amplifier:10,Duration:600}],CustomPotionColor:63217} 1
 
 tag @s add PassItem

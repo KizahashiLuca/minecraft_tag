@@ -6,6 +6,6 @@
 ## Version: alpha-0.2
 ###############################
 
-give @s minecraft:potion{display:{Name:"\"\\u00a7r透明化のポーション\""},CustomPotionEffects:[{Id:14,Duration:600}],CustomPotionColor:16777215} 1
+give @s minecraft:ender_eye{display:{Lore:["\" 使うことで発動。\"","\"  自分が鬼なら、鬼以外が発光。\"","\"  自分が鬼以外なら、鬼が発光。\""]}} 1
 
 tag @s add PassItem

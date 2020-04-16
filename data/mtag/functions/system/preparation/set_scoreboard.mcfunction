@@ -24,12 +24,15 @@ scoreboard objectives add 20 dummy
 scoreboard objectives add TAG_TIMES dummy
 ## Add variables for the tagged number
 scoreboard objectives add TAG_NUMBER dummy
+## Add variables for the snowball system
+scoreboard objectives add SNOWBALL dummy
+scoreboard objectives add TEMP_SNOWBALL dummy
 
 ## Set variables
 scoreboard players set Time GAME 10
 scoreboard players set Time NUM 0
 scoreboard players set Time WaitingTime 30
-scoreboard players set Time TimeLimit 300
+scoreboard players set Time TimeLimit 301
 scoreboard players set Time SECOND 60
 scoreboard players set Time TICK 0
 scoreboard players set Time 100 100

@@ -11,12 +11,14 @@ tellraw @a[tag=Tagged] ["",{"text":"\n----------------------------------","color
 tellraw @a[tag=Tagged] ["",{"text":"  あなたは ","color":"white"},{"text":"鬼","bold":true,"color":"red"},{"text":" を ","color":"white"},{"selector":"@s","bold":true,"color":"red"},{"text":" に押しつけました。","color":"white"}]
 tellraw @a[tag=Tagged] ["",{"text":"----------------------------------\n","color":"white"}]
 
-## Set effects
+## Remove speed effect
 effect clear @a[tag=Tagged]
+
+## Set effect
 effect give @a[tag=Tagged] minecraft:resistance 1000000 4 true
 
 ## Reset title
-title @a[tag=Tagged] clear
+title @a[tag=Tagged] actionbar [""]
 
 ## Remove tag
 tag @a[tag=Tagged] remove Tagged
