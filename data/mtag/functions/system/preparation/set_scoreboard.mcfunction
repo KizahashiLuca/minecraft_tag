@@ -41,7 +41,7 @@ scoreboard players set Time TICK 0
 scoreboard players set Time 100 100
 scoreboard players set Time 20 20
 scoreboard players set @a SECOND 0
-scoreboard players set @a TICK 20
+scoreboard players set @a TICK 0
 scoreboard players set @a TAG_TIMES 0
 scoreboard players set @a CARROTSTICK 0
 

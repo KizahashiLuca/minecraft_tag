@@ -15,8 +15,11 @@ scoreboard players set Time TICK 20
 scoreboard players operation Time SECOND = Time TimeLimit
 scoreboard players set Time GAME 20
 
+## Count number of players
+scoreboard players set Time NUM 0
+execute as @a[team=Player] run scoreboard players add Time NUM 1
+
 ## Set bossbar
-bossbar set bossbar players @a
 execute store result bossbar bossbar max run scoreboard players get Time TimeLimit
 execute store result bossbar bossbar value run scoreboard players get Time SECOND
 bossbar set bossbar name [{"text":"制限時間  残り "},{"score":{"name":"Time","objective":"SECOND"}},{"text":" 秒"}]
