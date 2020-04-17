@@ -15,6 +15,7 @@ scoreboard objectives remove TimeLimit
 scoreboard objectives remove SECOND
 scoreboard objectives remove TICK
 scoreboard objectives remove TEMP_SECOND
+scoreboard objectives remove TEMP_TICK
 scoreboard objectives remove 100
 scoreboard objectives remove 20
 ## Remove variables for the tagged system
@@ -24,6 +25,8 @@ scoreboard objectives remove TAG_NUMBER
 ## Remove variables for the snowball system
 scoreboard objectives remove SNOWBALL
 scoreboard objectives remove TEMP_SNOWBALL
+## Remove variables for the glowing system
+scoreboard objectives remove CARROTSTICK
 ## Remove players
 scoreboard players reset Time
 scoreboard players reset @a

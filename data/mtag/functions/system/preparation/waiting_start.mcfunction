@@ -19,7 +19,7 @@ tellraw @a ["",{"text":"                 ","color":"white"},{"text":"Waiting Sta
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
 
 ## Set scoreboards
-scoreboard players set Time TICK 0
+scoreboard players set Time TICK 20
 scoreboard players operation Time SECOND = Time WaitingTime
 scoreboard players set Time GAME 10
 

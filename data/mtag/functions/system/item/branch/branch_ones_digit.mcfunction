@@ -28,8 +28,8 @@ execute if score Time AddedSnowball matches 1 run scoreboard players add Time TE
 execute if score Time AddedGoldSword matches 1 if score Time ONES_DIGIT >= Time TEMP_DIGIT as @r[tag=!PassItem,tag=NoItem] run function mtag:system/item/special/golden_sword
 execute if score Time AddedGoldSword matches 1 run scoreboard players add Time TEMP_DIGIT 1
 
-execute if score Time AddedEnderEye matches 1 if score Time ONES_DIGIT >= Time TEMP_DIGIT as @r[tag=!PassItem,tag=NoItem] run function mtag:system/item/special/ender_eye
-execute if score Time AddedEnderEye matches 1 run scoreboard players add Time TEMP_DIGIT 1
+execute if score Time AddedCarrotStick matches 1 if score Time ONES_DIGIT >= Time TEMP_DIGIT as @r[tag=!PassItem,tag=NoItem] run function mtag:system/item/special/carrot_on_a_stick
+execute if score Time AddedCarrotStick matches 1 run scoreboard players add Time TEMP_DIGIT 1
 
 execute if score Time AddedInvis matches 1 if score Time ONES_DIGIT >= Time TEMP_DIGIT as @r[tag=!PassItem,tag=NoItem] run function mtag:system/item/special/potion_invisible
 execute if score Time AddedInvis matches 1 run scoreboard players add Time TEMP_DIGIT 1

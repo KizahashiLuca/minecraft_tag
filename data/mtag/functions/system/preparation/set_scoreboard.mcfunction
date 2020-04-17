@@ -18,6 +18,7 @@ scoreboard objectives add TimeLimit dummy
 scoreboard objectives add SECOND dummy
 scoreboard objectives add TICK dummy
 scoreboard objectives add TEMP_SECOND dummy
+scoreboard objectives add TEMP_TICK dummy
 scoreboard objectives add 100 dummy
 scoreboard objectives add 20 dummy
 ## Add variables for the tagged system
@@ -27,19 +28,22 @@ scoreboard objectives add TAG_NUMBER dummy
 ## Add variables for the snowball system
 scoreboard objectives add SNOWBALL dummy
 scoreboard objectives add TEMP_SNOWBALL dummy
+## Add variables for the glowing system
+scoreboard objectives add CARROTSTICK minecraft.used:minecraft.carrot_on_a_stick
 
 ## Set variables
 scoreboard players set Time GAME 10
 scoreboard players set Time NUM 0
 scoreboard players set Time WaitingTime 30
-scoreboard players set Time TimeLimit 301
+scoreboard players set Time TimeLimit 300
 scoreboard players set Time SECOND 60
 scoreboard players set Time TICK 0
 scoreboard players set Time 100 100
 scoreboard players set Time 20 20
 scoreboard players set @a SECOND 0
-scoreboard players set @a TICK 0
+scoreboard players set @a TICK 20
 scoreboard players set @a TAG_TIMES 0
+scoreboard players set @a CARROTSTICK 0
 
 ## Set team
 team add Player

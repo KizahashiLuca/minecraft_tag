@@ -7,12 +7,7 @@
 ###############################
 
 ## Process the timer system
-function mtag:system/time
-
-## Process the sound system
-execute as @a if score Time TICK matches 19 if score Time SECOND matches 4..10 run playsound minecraft:item.trident.return master @s ~ ~ ~ 1 1 1
-execute as @a if score Time TICK matches 19 if score Time SECOND matches 1..3 run playsound minecraft:item.trident.throw master @s ~ ~ ~ 1 1 1
-execute as @a if score Time TICK matches 0 if score Time SECOND matches 1 run playsound minecraft:item.trident.thunder master @s ~ ~ ~ 1 1 1
+function mtag:system/time/time
 
 ## Start the game
-execute if score Time TICK matches 0 if score Time SECOND matches 1 run function mtag:system/preparation/title
+execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mtag:system/preparation/title
