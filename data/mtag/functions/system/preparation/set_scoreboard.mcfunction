@@ -54,14 +54,19 @@ team modify Player friendlyFire true
 
 ## Set gamemode
 gamemode adventure @a[team=Player]
+
+## Set gamerule
+gamerule keepInventory true
+gamerule showDeathMessages false
+gamerule sendCommandFeedback false
+gamerule doLimitedCrafting true
 difficulty peaceful
+
+## Clear inventory
 clear @a
 
 ## Set effects
 effect give @a[team=Player] minecraft:resistance 1000000 4 true
-
-## Reset an advancement
-advancement revoke @a only mtag:attacked_from_tagged
 
 ## Count number of players
 execute as @a[team=Player] run scoreboard players add Time NUM 1

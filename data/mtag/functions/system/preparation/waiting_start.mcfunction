@@ -30,6 +30,3 @@ bossbar set bossbar max 60
 bossbar set bossbar value 60
 execute store result bossbar bossbar max run scoreboard players get Time WaitingTime
 execute store result bossbar bossbar value run scoreboard players get Time SECOND
-
-## Set advancement
-advancement revoke @a only mtag:attacked_from_tagged

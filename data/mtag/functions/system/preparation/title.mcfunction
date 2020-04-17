@@ -16,6 +16,7 @@ scoreboard players operation Time SECOND = Time TimeLimit
 scoreboard players set Time GAME 20
 
 ## Set bossbar
+bossbar set bossbar players @a
 execute store result bossbar bossbar max run scoreboard players get Time TimeLimit
 execute store result bossbar bossbar value run scoreboard players get Time SECOND
 bossbar set bossbar name [{"text":"制限時間  残り "},{"score":{"name":"Time","objective":"SECOND"}},{"text":" 秒"}]
@@ -35,6 +36,10 @@ tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
 
 ## Set effects
 effect give @a[tag=Tagged] minecraft:speed 1000000 1 true
+effect give @a[team=Player] minecraft:resistance 1000000 4 true
+
+## Set advancement
+advancement revoke @a only mtag:attacked_from_tagged
 
 ## Give items
 function mtag:system/item/item_branch

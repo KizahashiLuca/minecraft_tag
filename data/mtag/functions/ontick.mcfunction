@@ -6,6 +6,9 @@
 ## Version: alpha-0.2
 ###############################
 
+## Login En Route
+function mwj:system/en_route
+
 ## Run every tick
 execute if score Time GAME matches 10 run function mtag:system/preparation/waiting_time
 execute if score Time GAME matches 20 run function mtag:system/ongame/main

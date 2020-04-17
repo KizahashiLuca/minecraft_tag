@@ -58,8 +58,14 @@ tag @a remove NoHit
 tag @a remove DetectHit
 tag @a remove Snowball
 
-## Change gamerules
+## Set gamemode
 gamemode adventure @a
+
+## Set gamerule
+gamerule keepInventory false
 gamerule showDeathMessages true
 gamerule sendCommandFeedback true
 gamerule doLimitedCrafting false
+
+## Clear inventory
+clear @a
