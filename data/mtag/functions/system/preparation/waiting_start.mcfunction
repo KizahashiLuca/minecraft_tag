@@ -2,8 +2,8 @@
 ## Minecraft Version 1.15.2
 ## Minecraft Tag
 ## Author : KizahashiLuca
-## Date   : 03 Apr 2020
-## Version: alpha-0.2
+## Date   : 27 Jan 2022
+## Version: alpha-0.3
 ###############################
 
 ## Title of waiting time
@@ -13,7 +13,7 @@ title @a subtitle ["",{"text":"Waiting #mtag","color":"white","bold":true}]
 
 ## Send messages
 tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
-tellraw @a ["",{"text":"      Minecraft Tag alpha-0.2","color":"red","bold":true}]
+tellraw @a ["",{"text":"      Minecraft Tag alpha-0.3","color":"red","bold":true}]
 tellraw @a ["",{"text":"                   ","color":"white"},{"text":"潜伏時間開始","color":"green","bold":true}]
 tellraw @a ["",{"text":"                 ","color":"white"},{"text":"Waiting Start","color":"green","bold":true}]
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]

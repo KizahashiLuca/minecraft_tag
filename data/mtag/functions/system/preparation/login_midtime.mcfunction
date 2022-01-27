@@ -2,8 +2,8 @@
 ## Minecraft Version 1.15.2
 ## Minecraft Tag
 ## Author : KizahashiLuca
-## Date   : 03 Apr 2020
-## Version: alpha-0.2
+## Date   : 27 Jan 2022
+## Version: alpha-0.3
 ###############################
 
 ## Log-in midtime of preparation
