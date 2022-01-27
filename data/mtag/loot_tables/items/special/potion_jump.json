@@ -1,0 +1,32 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                ["",{"text":"跳躍のポーション","color":"yellow","bold":false,"italic":false}]
+              ]
+            },{
+              "function": "minecraft:set_lore",
+              "entity" : "this",
+              "replace": true,
+              "lore": [
+                ["",{"text":"跳躍力上昇 Ⅹ (0:30)","color":"blue","bold":false,"italic":false}]
+              ]
+            },{
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomPotionEffects:[{Id:8b,Amplifier:9b,Duration:600}],CustomPotionColor:3470848,HideFlags:63,Tags:[\"MTAGitem\",\"MTAG_potion_jump\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

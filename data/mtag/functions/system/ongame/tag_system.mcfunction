@@ -7,24 +7,24 @@
 ###############################
 
 ## Send messages
-tellraw @a[tag=Tagged] ["",{"text":"\n----------------------------------","color":"white"}]
-tellraw @a[tag=Tagged] ["",{"text":"  あなたは ","color":"white"},{"text":"鬼","bold":true,"color":"red"},{"text":" を ","color":"white"},{"selector":"@s","bold":true,"color":"red"},{"text":" に押しつけました。","color":"white"}]
-tellraw @a[tag=Tagged] ["",{"text":"----------------------------------\n","color":"white"}]
+tellraw @a[predicate=mtag:player/tagged] ["",{"text":"\n----------------------------------","color":"white"}]
+tellraw @a[predicate=mtag:player/tagged] ["",{"text":"  あなたは ","color":"white"},{"text":"鬼","bold":true,"color":"red"},{"text":" を ","color":"white"},{"selector":"@s","bold":true,"color":"red"},{"text":" に押しつけました。","color":"white"}]
+tellraw @a[predicate=mtag:player/tagged] ["",{"text":"----------------------------------\n","color":"white"}]
 
 ## Remove speed effect
-effect clear @a[tag=Tagged]
+effect clear @a[predicate=mtag:player/tagged]
 
 ## Set effect
-effect give @a[tag=Tagged] minecraft:resistance 1000000 4 true
+effect give @a[predicate=mtag:player/tagged] minecraft:resistance 1000000 4 true
 
 ## Reset title
-title @a[tag=Tagged] actionbar [""]
+title @a[predicate=mtag:player/tagged] actionbar [""]
 
 ## Remove tag
-tag @a[tag=Tagged] remove Tagged
+tag @a[predicate=mtag:player/tagged] remove MTAG_Tagged
 
 ## Add tag
-tag @s add Tagged
+tag @s add MTAG_Tagged
 
 ## Set effects
 effect give @s minecraft:slowness 5 100 true
@@ -32,7 +32,7 @@ effect give @s minecraft:blindness 5 100 true
 effect give @s minecraft:speed 1000000 1 true
 
 ## Add tag times
-scoreboard players add @s TAG_TIMES 1
+scoreboard players add @s TaggedTimes 1
 
 ## Send messages
 tellraw @s ["",{"text":"\n----------------------------------","color":"white"}]

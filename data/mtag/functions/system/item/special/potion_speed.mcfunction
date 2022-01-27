@@ -6,6 +6,7 @@
 ## Version: alpha-0.2
 ###############################
 
-give @s minecraft:potion{display:{Name:"\"\\u00a7r俊敏のポーション\""},CustomPotionEffects:[{Id:1,Amplifier:10,Duration:600}],CustomPotionColor:63217} 1
+loot give @s loot mtag:items/special/potion_speed
 
-tag @s add PassItem
+scoreboard players add @s AddedSpeed 1
+tag @s add MTAG_ItemPassed

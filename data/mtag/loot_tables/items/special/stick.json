@@ -1,0 +1,35 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                ["",{"text":"ホームランバット","color":"aqua","bold":false,"italic":false}]
+              ]
+            },{
+              "function": "minecraft:set_lore",
+              "entity" : "this",
+              "replace": true,
+              "lore": [
+                ["",{"text":"ノックバック Ⅹ","color":"gray","bold":false,"italic":false}]
+              ]
+            },{
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{id:\"minecraft:knockback\",lvl:10s}],Unbreakable:1,HideFlags:63,Tags:[\"MTAGitem\",\"MTAG_stick\"]}"
+            },{
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

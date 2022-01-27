@@ -6,6 +6,7 @@
 ## Version: alpha-0.2
 ###############################
 
-give @s minecraft:stick{display:{Name:"\"\\u00a7rホームランバット\""},Unbreakable:1,Enchantments:[{id:"minecraft:knockback",lvl:10}]} 1
+loot give @s loot mtag:items/special/stick
 
-tag @s add PassItem
+scoreboard players add @s AddedStick 1
+tag @s add MTAG_ItemPassed

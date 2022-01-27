@@ -1,0 +1,43 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:conduit",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                ["",{"text":"コンカッション地雷","color":"aqua","bold":false,"italic":false}]
+              ]
+            },{
+              "function": "minecraft:set_lore",
+              "entity" : "this",
+              "replace": true,
+              "lore": [
+                ["",{"text":"発光 (0:10)","color":"blue","bold":false,"italic":false}],
+                ["",{"text":"移動速度低下 Ⅶ (0:10)","color":"red","bold":false,"italic":false}],
+                ["",{"text":"アイテム使用方法 : ","color":"white","bold":false,"italic":false}],
+                ["",{"translate":"  (%s)+(%s)キーで設置","with":[{"keybind":"key.sneak","color":"aqua","bold":false,"italic":false},{"keybind":"key.drop","color":"aqua","bold":false,"italic":false}],"color":"white","bold":false,"italic":false}],
+                ["",{"text":"設置以後 : ","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  アイテム非消失","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  設置者回収可能","color":"white","bold":false,"italic":false}],
+                ["",{"text":"効果範囲 : ","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  半径1.5m","color":"white","bold":false,"italic":false}]
+              ]
+            },{
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,Tags:[\"MTAGitem\",\"MTAG_conduit\"]}"
+            },{
+              "function": "minecraft:set_count",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

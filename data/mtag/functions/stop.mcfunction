@@ -7,4 +7,4 @@
 ###############################
 
 ## Stop the game
-execute if entity @p[tag=Host] run function mtag:system/termination/stop_game
+execute if entity @p[predicate=mtag:player/host] run function mtag:system/termination/stop_game

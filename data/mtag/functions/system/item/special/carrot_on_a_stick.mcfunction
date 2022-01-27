@@ -6,6 +6,7 @@
 ## Version: alpha-0.2
 ###############################
 
-give @s minecraft:carrot_on_a_stick{display:{Lore:["\" 使うことで発動。\"","\"  自分が鬼なら、鬼以外が発光。\"","\"  自分が鬼以外なら、鬼が発光。\""]}} 1
+loot give @s loot mtag:items/special/carrot_on_a_stick
 
-tag @s add PassItem
+scoreboard players add @s AddedCarrotStick 1
+tag @s add MTAG_ItemPassed

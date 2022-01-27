@@ -1,0 +1,35 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                ["",{"text":"俊敏のポーション","color":"white","italic":false}]
+              ]
+            },{
+              "function": "minecraft:set_lore",
+              "entity" : "this",
+              "replace": true,
+              "lore": [
+                ["",{"text":"移動速度上昇 Ⅹ (0:30)","color":"blue","bold":false,"italic":false}],
+                [""],
+                ["",{"text":"効果：","color":"dark_purple","bold":false,"italic":false}],
+                ["",{"text":"移動速度 +200%","color":"blue","bold":false,"italic":false}]
+              ]
+            },{
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomPotionEffects:[{Id:1b,Amplifier:9b,Duration:600}],CustomPotionColor:63217,HideFlags:63,Tags:[\"MTAGitem\",\"MTAG_potion_speed\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

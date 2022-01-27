@@ -6,6 +6,7 @@
 ## Version: alpha-0.2
 ###############################
 
-give @s minecraft:snowball{display:{Name:"\"\\u00a7rコンカッショングレネード\"",Lore:["\" 半径3mのプレイヤーの動きを15秒止める\""]}} 2
+loot give @s loot mtag:items/special/snowball
 
-tag @s add PassItem
+scoreboard players add @s AddedSnowball 1
+tag @s add MTAG_ItemPassed

@@ -6,6 +6,7 @@
 ## Version: alpha-0.2
 ###############################
 
-give @s minecraft:golden_sword{display:{Lore:["\" 当てた相手を炎上させる。\"","\" 5度だけ使うことができる。\""]},Damage:27,Enchantments:[{id:"minecraft:knockback",lvl:2},{id:"minecraft:fire_aspect",lvl:2}]} 1
+loot give @s loot mtag:items/special/golden_sword
 
-tag @s add PassItem
+scoreboard players add @s AddedGoldSword 1
+tag @s add MTAG_ItemPassed

@@ -6,7 +6,7 @@
         "damage": {
           "source_entity": {
             "type": "minecraft:player",
-            "nbt": "{Tags:[\"Tagged\"]}"
+            "nbt": "{Tags:[\"MTAG_Tagged\"]}"
           }
         }
       }

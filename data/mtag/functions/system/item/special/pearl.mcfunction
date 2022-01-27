@@ -6,6 +6,7 @@
 ## Version: alpha-0.2
 ###############################
 
-give @s minecraft:ender_pearl 2
+loot give @s loot mtag:items/special/ender_pearl
 
-tag @s add PassItem
+scoreboard players add @s AddedPearl 1
+tag @s add MTAG_ItemPassed

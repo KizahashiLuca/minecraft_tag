@@ -7,5 +7,5 @@
 ###############################
 
 ## Detect whether holding the game
-execute if entity @p[tag=Host] run function mtag:system/termination/on_holding_game
-execute unless entity @p[tag=Host] run function mtag:system/preparation/main
+execute if entity @p[predicate=mtag:player/host] run function mtag:system/termination/reject_game/on_holding_game
+execute unless entity @p[predicate=mtag:player/host] run function mtag:system/preparation/main

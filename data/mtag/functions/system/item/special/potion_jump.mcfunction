@@ -6,6 +6,7 @@
 ## Version: alpha-0.2
 ###############################
 
-give @s minecraft:potion{display:{Name:"\"\\u00a7r跳躍のポーション\""},CustomPotionEffects:[{Id:8,Amplifier:10,Duration:600}],CustomPotionColor:3470848} 1
+loot give @s loot mtag:items/special/potion_jump
 
-tag @s add PassItem
+scoreboard players add @s AddedJump 1
+tag @s add MTAG_ItemPassed

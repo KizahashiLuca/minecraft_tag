@@ -1,0 +1,39 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                ["",{"text":"みんな光れ","color":"aqua","bold":false,"italic":false}]
+              ]
+            },{
+              "function": "minecraft:set_lore",
+              "entity" : "this",
+              "replace": true,
+              "lore": [
+                ["",{"text":"発光 (0:15)","color":"blue","bold":false,"italic":false}],
+                ["",{"text":"  鬼が使用したら鬼以外が発光","color":"gray","bold":false,"italic":false}],
+                ["",{"text":"  鬼以外が使用したら鬼以外が発光","color":"gray","bold":false,"italic":false}],
+                ["",{"text":"アイテム使用方法 : ","color":"white","bold":false,"italic":false}],
+                ["",{"translate":"  (%s)キー","with":[{"keybind":"key.use","color":"aqua","bold":false,"italic":false}],"color":"white","bold":false,"italic":false}]
+              ]
+            },{
+              "function": "minecraft:set_nbt",
+              "tag": "{Unbreakable:1b,HideFlags:63,Tags:[\"MTAGitem\",\"MTAG_carrot_on_a_stick\"]}"
+            },{
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

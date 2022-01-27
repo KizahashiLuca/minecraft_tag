@@ -6,8 +6,11 @@
 ## Version: alpha-0.2
 ###############################
 
+## Login midtime
+execute as @a[predicate=mtag:player/login_midtime] run function mtag:system/ongame/login_midtime 
+
 ## Process the timer system
-function mtag:system/time/time
+function mtag:system/common/time/tick
 
 ## Start the game
-execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mtag:system/preparation/title
+execute if predicate mtag:system/common/time/zero run function mtag:system/preparation/title

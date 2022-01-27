@@ -1,0 +1,42 @@
+[
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#mtag"
+      },
+      "score": "AddedConduit",
+      "scale": 1
+    },
+    "range": {
+      "min": 1,
+      "max": 2147483647
+    }
+  },
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#mtag"
+      },
+      "score": "KindsOnesDigit",
+      "scale": 1
+    },
+    "range": {
+      "min": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#mtag"
+        },
+        "score": "KindsTempDigit",
+        "scale": 1
+      },
+      "max": 2147483647
+    }
+  }
+]

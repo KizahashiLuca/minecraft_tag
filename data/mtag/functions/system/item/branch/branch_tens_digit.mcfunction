@@ -7,9 +7,9 @@
 ###############################
 
 ## Give Special Items 
-execute if score Time TENS_DIGIT matches 1.. run function mtag:system/item/branch/branch_ones_digit
+execute if score #mtag KindsTensDigit matches 1.. run function mtag:system/item/branch/branch_ones_digit
 
 ## Remove Number of Player Item Gived
-execute if score Time TENS_DIGIT matches 1.. run scoreboard players remove Time TENS_DIGIT 1
-scoreboard players operation Time ONES_DIGIT = Time DENOMINATOR
-scoreboard players remove Time ONES_DIGIT 1
+execute if score #mtag KindsTensDigit matches 1.. run scoreboard players remove #mtag KindsTensDigit 1
+scoreboard players operation #mtag KindsOnesDigit = #mtag KindOfItems
+scoreboard players remove #mtag KindsOnesDigit 1
