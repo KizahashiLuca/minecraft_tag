@@ -34,7 +34,7 @@ scoreboard players operation #mtag Second = #mtag TimeLimit
 scoreboard players set #mtag GamePhase 20
 
 ## Number the Members
-execute as @a[predicate=mtag:player/team] run function mtag:system/preparation/set_numbering
+function mtag:system/preparation/set_numbering
 tag @a remove MTAG_NumberedPlayer
 
 ## Count number of players

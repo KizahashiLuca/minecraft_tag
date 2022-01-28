@@ -12,7 +12,7 @@ gamemode adventure @s[tag=!MTAG_Host]
 clear @s[tag=!MTAG_Host]
 
 ## Bossbar
-bossbar set mtag:bossbar players @s
+bossbar set mtag:bossbar players @a
 
 ## Add a tag
 tag @s add MTAG_NotInitialized

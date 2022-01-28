@@ -55,7 +55,7 @@ scoreboard players set #mtag GamePhase 10
 scoreboard players set #mtag CountOfPlayers 0
 scoreboard players set #mtag WaitingTime 30
 scoreboard players set #mtag TimeLimit 300
-scoreboard players set #mtag PlayerNumber 0
+scoreboard players set #mtag PlayerNumber 1
 scoreboard players set @a PlayerNumber 0
 ## the time system
 scoreboard players set #mtag Second 60
@@ -88,6 +88,8 @@ scoreboard players set @a AddedSpeed 0
 scoreboard players set @a AddedJump 0
 ## the tagged system
 scoreboard players set @a TaggedTimes 0
+## the mine system
+scoreboard players set @a DropConduit 0
 ## the glowing system
 scoreboard players set @a UseCarrotStick 0
 

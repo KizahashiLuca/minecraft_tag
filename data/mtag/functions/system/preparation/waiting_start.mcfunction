@@ -9,7 +9,7 @@
 ## Title of waiting time
 title @a times 10 1160 30
 title @a title ["",{"text":"潜伏時間","color":"red","bold":true}]
-title @a subtitle ["",{"text":"Waiting #mtag","color":"white","bold":true}]
+title @a subtitle ["",{"text":"Waiting Time","color":"white","bold":true}]
 
 ## Send messages
 tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
