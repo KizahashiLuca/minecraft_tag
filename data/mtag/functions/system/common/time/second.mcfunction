@@ -1,5 +1,5 @@
 ###############################
-## Minecraft Version 1.15.2
+## Minecraft Version 1.18
 ## Minecraft Tag
 ## Author : KizahashiLuca
 ## Date   : 27 Jan 2022
