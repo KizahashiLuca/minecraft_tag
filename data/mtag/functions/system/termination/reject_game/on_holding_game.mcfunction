@@ -1,14 +1,14 @@
 ###############################
-## Minecraft Version 1.18
+## Minecraft Version 1.20
 ## Minecraft Tag
 ## Author : KizahashiLuca
-## Date   : 27 Jan 2022
-## Version: alpha-0.3
+## Date   : 18 Jun 2023
+## Version: alpha-0.4
 ###############################
 
 ## Send messages
 tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
-tellraw @a ["",{"text":"      Minecraft Tag alpha-0.3","color":"red","bold":true}]
+tellraw @a ["",{"text":"      Minecraft Tag alpha-0.4","color":"red","bold":true}]
 tellraw @a ["",{"text":"                     ","color":"white"},{"text":"Error","color":"yellow","bold":true}]
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"  ゲーム中に、新たなゲームは開始できません。","color":"white"}]

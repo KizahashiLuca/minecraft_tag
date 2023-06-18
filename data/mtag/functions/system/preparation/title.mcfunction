@@ -1,9 +1,9 @@
 ###############################
-## Minecraft Version 1.18
+## Minecraft Version 1.20
 ## Minecraft Tag
 ## Author : KizahashiLuca
-## Date   : 27 Jan 2022
-## Version: alpha-0.3
+## Date   : 18 Jun 2023
+## Version: alpha-0.4
 ###############################
 
 ## Sound
@@ -19,7 +19,7 @@ title @a subtitle ["",{"text":"START","color":"white","bold":true}]
 
 ## Send messages & tagged player
 tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
-tellraw @a ["",{"text":"      Minecraft Tag alpha-0.3","color":"red","bold":true}]
+tellraw @a ["",{"text":"      Minecraft Tag alpha-0.4","color":"red","bold":true}]
 tellraw @a ["",{"text":"                  ","color":"white"},{"text":"Game Start","color":"green","bold":true}]
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"   鬼は ","color":"white"},{"selector":"@a[predicate=mtag:player/tagged]","bold":true,"color":"red"},{"text":" です。","color":"white"}]
