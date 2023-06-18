@@ -15,7 +15,7 @@ tellraw @a[predicate=mtag:player/tagged] ["",{"text":"--------------------------
 effect clear @a[predicate=mtag:player/tagged]
 
 ## Set effect
-effect give @a[predicate=mtag:player/tagged] minecraft:resistance 1000000 4 true
+effect give @a[predicate=mtag:player/tagged] minecraft:resistance infinite 4 true
 
 ## Reset title
 title @a[predicate=mtag:player/tagged] actionbar [""]
@@ -29,7 +29,7 @@ tag @s add MTAG_Tagged
 ## Set effects
 effect give @s minecraft:slowness 5 100 true
 effect give @s minecraft:blindness 5 100 true
-effect give @s minecraft:speed 1000000 1 true
+effect give @s minecraft:speed infinite 1 true
 
 ## Add tag times
 scoreboard players add @s TaggedTimes 1

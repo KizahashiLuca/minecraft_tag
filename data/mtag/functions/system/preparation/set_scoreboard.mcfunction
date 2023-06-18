@@ -115,7 +115,7 @@ difficulty peaceful
 clear @a
 
 ## Set effects
-effect give @a[predicate=mtag:player/team] minecraft:resistance 1000000 4 true
+effect give @a[predicate=mtag:player/team] minecraft:resistance infinite 4 true
 
 ## Count number of players
 execute as @a[predicate=mtag:player/team] run scoreboard players add #mtag CountOfPlayers 1

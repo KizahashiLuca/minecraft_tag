@@ -22,8 +22,26 @@
                 ["",{"text":"ノックバック Ⅱ","color":"gray","bold":false,"italic":false}]
               ]
             },{
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:knockback": {
+                  "max": 2,
+                  "min": 2
+                },
+                "minecraft:fire_aspect": {
+                  "max": 2,
+                  "min": 2
+                }
+              }
+            },{
+              "function": "minecraft:set_damage",
+              "damage": {
+                "max": 0.15625,
+                "min": 0.15625
+              }
+            },{
               "function": "minecraft:set_nbt",
-              "tag": "{Enchantments:[{id:\"minecraft:knockback\",lvl:2s},{id:\"minecraft:fire_aspect\",lvl:2s}],Damage:27,HideFlags:63,Tags:[\"MTAGitem\",\"MTAG_golden_sword\"]}"
+              "tag": "{HideFlags:63,Tags:[\"MTAGitem\",\"MTAG_golden_sword\"]}"
             },{
               "function": "minecraft:set_count",
               "count": 1

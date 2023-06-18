@@ -21,8 +21,16 @@
                 ["",{"text":"ノックバック Ⅹ","color":"gray","bold":false,"italic":false}]
               ]
             },{
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:knockback": {
+                  "max": 10,
+                  "min": 10
+                }
+              }
+            },{
               "function": "minecraft:set_nbt",
-              "tag": "{Enchantments:[{id:\"minecraft:knockback\",lvl:10s}],Unbreakable:1,HideFlags:63,Tags:[\"MTAGitem\",\"MTAG_stick\"]}"
+              "tag": "{Unbreakable:1,HideFlags:63,Tags:[\"MTAGitem\",\"MTAG_stick\"]}"
             },{
               "function": "minecraft:set_count",
               "count": 1

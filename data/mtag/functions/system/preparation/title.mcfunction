@@ -56,8 +56,8 @@ bossbar set mtag:bossbar style notched_10
 bossbar set mtag:bossbar color green
 
 ## Set effects
-effect give @a[predicate=mtag:player/team] minecraft:resistance 1000000 4 true
-effect give @a[predicate=mtag:player/tagged] minecraft:speed 1000000 1 true
+effect give @a[predicate=mtag:player/team] minecraft:resistance infinite 4 true
+effect give @a[predicate=mtag:player/tagged] minecraft:speed infinite 1 true
 
 ## Set advancement
 advancement revoke @a only mtag:attacked_from_tagged

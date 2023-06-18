@@ -22,8 +22,14 @@
                 ["",{"text":"拡散","color":"gray","bold":false,"italic":false}]
               ]
             },{
+              "function": "minecraft:set_damage",
+              "damage": {
+                "max": 0,
+                "min": 0
+              }
+            },{
               "function": "minecraft:set_nbt",
-              "tag": "{Damage:464,Charged:1b,ChargedProjectiles:[{id:\"minecraft:spectral_arrow\",Count:1b,tag:{CustomPotionEffects:[{Id:7b,Amplifier:3b,Duration:1}]}},{id:\"minecraft:spectral_arrow\",Count:1b,tag:{CustomPotionEffects:[{Id:7b,Amplifier:3b,Duration:1}]}},{id:\"minecraft:spectral_arrow\",Count:1b,tag:{CustomPotionEffects:[{Id:7b,Amplifier:3b,Duration:1}]}}],Enchantments:[{id:\"minecraft:multishot\",lvl:1s}],HideFlags:63,Tags:[\"MTAGitem\",\"MTAG_crossbow\"]}"
+              "tag": "{Charged:1b,ChargedProjectiles:[{id:\"minecraft:spectral_arrow\",Count:1b,tag:{CustomPotionEffects:[{Id:7,Amplifier:3b,Duration:1}]}},{id:\"minecraft:spectral_arrow\",Count:1b,tag:{CustomPotionEffects:[{Id:7,Amplifier:3b,Duration:1}]}},{id:\"minecraft:spectral_arrow\",Count:1b,tag:{CustomPotionEffects:[{Id:7,Amplifier:3b,Duration:1}]}}],Enchantments:[{id:\"minecraft:multishot\",lvl:1s}],HideFlags:63,Tags:[\"MTAGitem\",\"MTAG_crossbow\"]}"
             }
           ]
         }
